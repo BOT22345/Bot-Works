@@ -37,12 +37,26 @@ ul{
     min-height: 100vh;
     display:block;
     position:fixed;
+    padding:0 30px;
     left:270px;
     top:0;
     right:0;
     z-index:0;
     opacity: 1;
 }
+/* 
+.padd-15{
+    padding-left:15px;
+    padding-right:15px;
+} */
+
+.container{
+    max-width: 1100px;
+    width:100%;
+    margin:auto;
+}
+
+/* ==== aside ==== */
 
 .aside{
     width:270px;
@@ -169,4 +183,13 @@ ul{
 .aside .nav li a i{
     margin-right:15px;
     /* margin-right:160px; later try this too */
+}
+
+/* ==== home ====*/
+
+.home .home-img img{
+    width: 300px;
+    height:400px;
+    border-radius:50%;
+    border:3px solid var(--skin-color);
 }
