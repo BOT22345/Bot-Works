@@ -1,3 +1,7 @@
+/* ==== fonts ==== */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
      --bg-black-900:#f2f2fc;
      --bg-black-100:#fdf9ff;
@@ -9,6 +13,7 @@
 body{
     line-height:1.5;
     font-size:16px;
+    font-family: "poppins" sans-serif;  
 }
 
 *{
@@ -51,6 +56,7 @@ ul{
     align-items: center;
     justify-content: center;
     z-index:10;
+    border-right:1px solid var(--bg-black-50)
 }
 
 .aside .logo{
@@ -58,4 +64,66 @@ ul{
     top:50px;
     font-size:30px;
     text-transform: capitalize;
+}
+
+.aside .logo a{
+    color:var(--text-black-900);
+    font-weight: 700;
+    padding:15px 20px;
+    font-size:30px;
+    letter-spacing: 5px;
+    position:relative;
+}
+
+.aside .logo a span{
+    font-family: 'Clicker script',cursive;
+    font-family: 40px;
+}
+
+.aside .logo a::before{
+    content:"";
+    position:absolute;
+    width:20px;
+    height: 20px;
+    border-bottom:5px solid var(--skin-color);
+    border-left:5px solid var(--skin-color);
+    bottom:0;
+    left:0;
+}
+.aside .logo a::after{
+    content:"";
+    position:absolute;
+    width:20px;
+    height: 20px;
+    border-top:5px solid var(--skin-color);
+    border-right:5px solid var(--skin-color);
+    top:0;
+    right:0;
+}
+
+.aside .nav{
+    margin-top:50px;
+}
+
+.aside .nav li{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a{
+    font-size:16px;
+    font-weight:600;
+    display: block;
+    color:var(--text-black-900);
+    padding:5px 15px;
+    border-bottom:1px solid var(--bg-black-50)
+}
+
+.aside .nav li a.active{
+    color:var(--skin-color)
+} 
+
+.aside .nav li a i{
+    margin-right:15px;
+    /* margin-right:160px; later try this too */
 }
