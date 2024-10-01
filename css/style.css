@@ -701,3 +701,13 @@ h3.my-profession{
         max-width: 100%;
     }
 }
+
+/* setting up tools icons for about section */
+
+.tools-icons{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 50%;
+    top: -371%;
+}
