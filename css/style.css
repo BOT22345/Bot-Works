@@ -705,9 +705,9 @@ h3.my-profession{
 /* setting up tools icons for about section */
 
 .tools-icons{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     position: relative;
-    left: 50%;
-    top: -371%;
+    left: 46%;
+    top: -500%;
 }
